@@ -112,10 +112,13 @@ public int getMemberCount(){
     return members.size();
    
 }    
+
+public void getTrainer(){
+    
+}
  
 //Display trainer information as a string
-    @Override
-    public String toString(){
+    public String toStringPersonalTrainer(){
     return "PersonalTrainer[ID=" + getSttafID() +
                ", Name=" + getFirst_name() + " " + getLast_name() +
                ", Members=" + getMemberCount() + "]";
