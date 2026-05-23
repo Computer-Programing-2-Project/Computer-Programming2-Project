@@ -12,11 +12,13 @@ public class PolySttaf extends Member {
         private String Position;
     private String department;
 
-    public PolySttaf(String Position, String department, int id, String fn, String ln, String ad, String dob, String ph, String gender, String type, String extra1, String extra2) {
-        super(id, fn, ln, ad, dob, ph, gender, type, extra1, extra2);
+    public PolySttaf(String Position, String department, int memberId, String dateOfBirth, String gender, PersonalTrainer trainer, int id, String fn, String ln, String ad, String ph) {
+        super(memberId, dateOfBirth, gender, trainer, id, fn, ln, ad, ph);
         this.Position = Position;
         this.department = department;
     }
+
+    
 
     public String getPosition() {
         return Position;
@@ -39,10 +41,12 @@ public class PolySttaf extends Member {
         return lastName;
     }
 
+        @Override
     public String getAddress() {
         return address;
     }
 
+        @Override
     public String getPhone() {
         return phone;
     }
@@ -55,14 +59,17 @@ public class PolySttaf extends Member {
         this.department = department;
     }
 
+        @Override
     public void setId(int id) {
         this.id = id;
     }
 
+        @Override
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+        @Override
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }

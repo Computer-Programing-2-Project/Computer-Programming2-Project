@@ -75,7 +75,7 @@ public class Main {
                     String extra1 = sc.nextLine();
                     System.out.print("Extra2 (department/team): ");
                     String extra2 = sc.nextLine();
-                    sys.addMember(fn, ln, ad, dob, ph, gender, type, extra1, extra2);
+                    sys.addMember(fn, ln, ad, dateOfBirth, ph, gender);
                     System.out.println("Member added.");
                     break;
 
@@ -179,6 +179,24 @@ public class Main {
             }
         }
 
+         public static void assignMemberToTrainer(PersonalTrainer trainer){
+        System.out.println("Enter the member ID you would like to add: ");
+        int id = scan.nextInt();
+        Member memb = getMemberByID(id);
+        trainer.assignMember(memb);
+    }
+    
+    public static void removeMemberFromTrainer(Trainer trainer){
+        System.out.println("Enter the member ID you would like to remove: ");
+        int id = scan.nextInt();
+        ArrayList<Member> membList = trainer.getAssignedMembers();
+        Member person = membList.get(id);
+        if(person != null){
+            trainer.removeMember(person);
+            System.out.println("Member removed");
+        }else{
+            System.out.println("Member is not in the List");
+        }
         sc.close();
     }
 }

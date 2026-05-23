@@ -8,7 +8,6 @@ package Business;
  *
  * @author ABC
  */
-public class Reportabel {
-     
-
+public class Serializable {
+    
 }
