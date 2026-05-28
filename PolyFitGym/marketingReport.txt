@@ -1,0 +1,13 @@
+=================================================
+   POLYFIT GYM MANAGEMENT SYSTEM - MARKETING REPORT
+=================================================
+
+--- POLYTECHNIC STAFF MEMBERS ---
+Total Staff Members: 0
+
+--- POLYTECHNIC STUDENT MEMBERS ---
+ID: 1     Name: ahmed madry          Course: Programming     Team: THE WINNERS
+Total Student Members: 1
+
+=================================================
+End of Report.
